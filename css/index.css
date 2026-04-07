@@ -79,6 +79,28 @@
     display: none;
 }
 
+.home {
+    padding: 15px;
+    background-color: rgb(231, 131, 0);
+}
+
+.navigation ul li {
+    border-radius: 10px;
+    padding: 1px;
+    margin: 20px;
+}
+
+.closebtn {
+    display: none;
+    position: absolute;
+    left: 105px;
+}
+
+.closebtn img {
+    width: 30px;
+    height: 30px;
+}
+
 @media screen and (max-width: 850px) {
     .head {
         background-color: rgb(231, 131, 0);
@@ -105,23 +127,33 @@
     }
 
     .navigation ul {
+        width: 20vh;
         list-style: none;
-        display: block;
+        display: none;
         color: black;
         height: 100vh;
         background-color: rgb(199, 113, 1);
         position: absolute;
-        left: -105%;
+        left: 31.5%;
         top: -8%;
         transition: all 0.4s;
-
     }
 
-    .clickbtn{
+    .space {
+        padding-top: 90px;
+    }
+
+    .clickbtn {
         display: block;
     }
 
-    #clickbtn:checked ~ ul{
-        left: 52%;
+    .closebtn {
+        display: block;
     }
+
+    .nav-ul li:hover {
+        padding: 15px;
+        background-color: rgb(231, 131, 0); 
+    }
+
 }
