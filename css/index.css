@@ -96,7 +96,7 @@
     left: 105px;
 }
 
-.closebtn{
+.closebtn {
     width: 50px;
     height: 50px;
 }
@@ -107,6 +107,84 @@
     position: absolute;
     top: 30%;
     left: 50%;
+}
+
+.section {
+    width: 100vh;
+}
+
+.slider-wrapper {
+    width: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.slider {
+    width: 90vh;
+    height: 480px;
+    background-color: gray;
+}
+
+.body {
+    margin-top: 5%;
+    width: 100%;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.slider-wrapper {
+    width: 50%;
+    border-radius: 25px;
+    height: 525px;
+    background-color: gray;
+}
+
+.slider-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#slide-1 {
+    width: 40vh;
+    display: block;
+}
+
+#slide-2 {
+    width: 33vh;
+    display: none;
+}
+
+#slide-3 {
+    width: 30vh;
+    display: none;
+}
+
+#slide-4 {
+    width: 28vh;
+    display: none;
+}
+
+#slide-5 {
+    width: 27vh;
+    display: none;
+}
+
+#slide-6 {
+    display: none;
 }
 
 @media screen and (max-width: 850px) {
@@ -161,7 +239,71 @@
 
     .nav-ul li:hover {
         padding: 15px;
-        background-color: rgb(231, 131, 0); 
+        background-color: rgb(231, 131, 0);
     }
 
+
+
+
+    /* slider */
+    .body {
+        width: 100%;
+    }
+
+    .section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .slider-wrapper {
+        width: 65%;
+        border-radius: 25px;
+        height: 525px;
+        background-color: gray;
+    }
+
+    .slider-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slider-nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #slide-1 {
+        width: 25vh;
+        display: block;
+    }
+
+    #slide-2 {
+        width: 23vh;
+        display: none;
+    }
+
+    #slide-3 {
+        width: 20vh;
+        display: none;
+    }
+
+    #slide-4 {
+        width: 18vh;
+        display: none;
+    }
+
+    #slide-5 {
+        width: 17vh;
+        display: none;
+    }
+
+    #slide-6 {
+        width: 18vh;
+        display: none;
+    }
 }
