@@ -117,17 +117,19 @@
     width: 100vh;
     display: flex;
     align-items: center;
-
 }
 
 .slider {
-    width: 90vh;
-    height: 480px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    height: 675px;
     background-color: gray;
+    justify-content: center;
 }
 
 .body {
-    margin-top: 5%;
+    margin-top: 1%;
     width: 100%;
 }
 
@@ -139,9 +141,9 @@
 }
 
 .slider-wrapper {
-    width: 50%;
+    width: 95%;
     border-radius: 25px;
-    height: 525px;
+    height: 775px;
     background-color: gray;
 }
 
@@ -159,32 +161,66 @@
 }
 
 #slide-1 {
-    width: 40vh;
+    width: 55vh;
     display: block;
 }
 
 #slide-2 {
-    width: 33vh;
+    width: 43vh;
     display: none;
 }
 
 #slide-3 {
-    width: 30vh;
+    width: 43vh;
     display: none;
 }
 
 #slide-4 {
-    width: 28vh;
+    width: 39vh;
     display: none;
 }
 
 #slide-5 {
-    width: 27vh;
+    width: 39vh;
     display: none;
 }
 
 #slide-6 {
+    width: 53vh;
     display: none;
+}
+
+.footer {
+    background-color: rgb(231, 131, 0);
+    margin-top: 6vh;
+    height: 10vh;
+    position: absolute;
+    width: 100%;
+    bottom: -10;
+}
+
+.text {
+    padding-top: 1%;
+    margin-left: 5%;
+}
+
+.text p {
+    color: white;
+    font-family: monospace;
+    font-size: 17px;
+}
+
+.gmail {
+    text-decoration: none;
+    font-family: monospace;
+    color: white;
+    font-size: 17px;
+}
+
+.gmail:hover {
+    font-weight: 700;
+    font-family: monospace;
+
 }
 
 @media screen and (max-width: 850px) {
@@ -246,8 +282,13 @@
 
 
     /* slider */
+    .slider {
+        height: 300px;
+    }
+
     .body {
         width: 100%;
+        height: 90vh;
     }
 
     .section {
@@ -258,9 +299,9 @@
     }
 
     .slider-wrapper {
-        width: 65%;
+        width: 95%;
         border-radius: 25px;
-        height: 525px;
+        height: 650px;
         background-color: gray;
     }
 
@@ -278,32 +319,66 @@
     }
 
     #slide-1 {
-        width: 25vh;
+        width: 45vh;
         display: block;
     }
 
     #slide-2 {
-        width: 23vh;
+        width: 35vh;
         display: none;
     }
 
     #slide-3 {
-        width: 20vh;
+        width: 35vh;
         display: none;
     }
 
     #slide-4 {
-        width: 18vh;
+        width: 35vh;
         display: none;
     }
 
     #slide-5 {
-        width: 17vh;
+        width: 35vh;
         display: none;
     }
 
     #slide-6 {
-        width: 18vh;
+        width: 39vh;
         display: none;
     }
+
+    .footer {
+        background-color: rgb(231, 131, 0);
+        margin-top: 6vh;
+        height: 13vh;
+        position: absolute;
+        width: 100%;
+        bottom: -10px;
+    }
+
+    .text {
+        padding-top: 1%;
+        margin-left: 5%;
+    }
+
+    .text p {
+        color: white;
+        font-family: monospace;
+        font-size: 17px;
+    }
+
+    .gmail {
+        text-decoration: none;
+        font-family: monospace;
+        color: white;
+        font-size: 17px;
+    }
+
+    .gmail:hover {
+        font-weight: 700;
+        font-family: monospace;
+
+    }
+
 }
