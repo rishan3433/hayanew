@@ -90,17 +90,17 @@
     margin: 20px;
 }
 
-.section1{
+.section1 {
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
 }
 
-.home{
+.home {
     background-color: rgb(255, 145, 0);
 }
 
-.navigation ul li:hover{
+.navigation ul li:hover {
     background-color: rgb(255, 145, 0);
 }
 
@@ -213,18 +213,19 @@ body {
 
 /* Secction 2 */
 
-.section2{
+.section2 {
     display: flex;
     justify-content: center;
     margin-bottom: 5vh;
 }
 
-.Heading h1{
+.Heading h1 {
     display: flex;
     justify-content: center;
     font-family: "NotoSans";
 }
-.logo-img{
+
+.logo-img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -233,28 +234,31 @@ body {
     border: 1px solid;
 }
 
-.logo-img img{
+.logo-img img {
     width: 15vh;
 }
-.Logo-Section{
+
+.Logo-Section {
     display: flex;
     flex-direction: row;
 }
 
 /* Secction 3 */
 
-.section3{
+.section3 {
     display: flex;
+    overflow: hidden;
     justify-content: center;
     margin-bottom: 5vh;
 }
 
-.Heading h1{
+.Heading-P h1 {
     display: flex;
     justify-content: center;
     font-family: "NotoSans";
 }
-.logo-img{
+
+.logo-img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -263,13 +267,18 @@ body {
     border: 1px solid;
 }
 
-.logo-img img{
+.logo-img img {
     width: 15vh;
 }
-.Logo-Section{
+
+.Logo-Section-P {
     display: flex;
     flex-direction: row;
+    width: 121.4vh;
+    overflow: hidden;
 }
+
+
 
 /* Footer */
 
@@ -280,9 +289,10 @@ body {
     width: 100%;
 }
 
-.footer-line{
+.footer-line {
     color: white;
 }
+
 .text {
     padding-top: 1%;
     margin-left: 5%;
@@ -372,7 +382,7 @@ body {
 
     .body {
         width: 100%;
-    margin-bottom: 5%;
+        margin-bottom: 5%;
         height: 90vh;
     }
 
@@ -444,6 +454,7 @@ body {
         margin-top: auto;
         height: 15vh;
         width: 100%;
+        display: none;
     }
 
 
@@ -470,5 +481,43 @@ body {
         font-family: monospace;
 
     }
+
+
+
+    /* Secction 3 */
+
+    .section3 {
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        margin-bottom: 5vh;
+    }
+
+    .Heading-P h1 {
+        display: flex;
+        justify-content: center;
+        font-family: "NotoSans";
+    }
+
+    .logo-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 7vh;
+        height: 7vh;
+        border: 1px solid;
+    }
+
+    .logo-img img {
+        width: 6vh;
+    }
+
+    .Logo-Section-P {
+        display: flex;
+        flex-direction: row;
+        width: 50.4vh;
+        overflow: hidden;
+    }
+
 
 }
