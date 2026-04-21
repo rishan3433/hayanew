@@ -90,6 +90,20 @@
     margin: 20px;
 }
 
+.section1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.home{
+    background-color: rgb(255, 145, 0);
+}
+
+.navigation ul li:hover{
+    background-color: rgb(255, 145, 0);
+}
+
 .closebtn {
     display: none;
     position: absolute;
@@ -197,13 +211,78 @@ body {
     min-height: 100vh;
 }
 
+/* Secction 2 */
+
+.section2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.Heading h1{
+    display: flex;
+    justify-content: center;
+    font-family: "NotoSans";
+}
+.logo-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vh;
+    height: 20vh;
+    border: 1px solid;
+}
+
+.logo-img img{
+    width: 15vh;
+}
+.Logo-Section{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Secction 3 */
+
+.section3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.Heading h1{
+    display: flex;
+    justify-content: center;
+    font-family: "NotoSans";
+}
+.logo-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vh;
+    height: 20vh;
+    border: 1px solid;
+}
+
+.logo-img img{
+    width: 15vh;
+}
+.Logo-Section{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Footer */
+
 .footer {
     background-color: rgb(231, 131, 0);
     margin-top: auto;
-    height: 10vh;
+    height: 12vh;
     width: 100%;
 }
 
+.footer-line{
+    color: white;
+}
 .text {
     padding-top: 1%;
     margin-left: 5%;
@@ -363,7 +442,7 @@ body {
     .footer {
         background-color: rgb(231, 131, 0);
         margin-top: auto;
-        height: 10vh;
+        height: 15vh;
         width: 100%;
     }
 
