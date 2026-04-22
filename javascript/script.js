@@ -15,21 +15,49 @@ function CloseSide() {
 }
 
 var counter = 1;
+var countertrue = false;
 
 setInterval(() => {
-    var Opened = document.querySelector("#slide-" + counter);
-    counter++;
-    var closed = document.querySelector("#slide-" + counter);
+    var w = window.innerWidth;
 
-    if (counter == 7) {
-        counter = 1;
-        closed = document.querySelector("#slide-" + counter);
+    const firstSlide = document.getElementById("slide-1");
+    if (w < 850) {
+        if (counter < -300) {
+            countertrue = true;
+        }
+        if (counter > 0) {
+            countertrue = false;
+        }
+
+        if (countertrue) {
+            counter = counter - counter;
+            counter = counter + 290;
+        } else {
+            counter = counter - 1;
+        }
 
     }
 
-    Opened.style.display = 'none';
-    closed.style.display = 'block';
-}, 2000);
+    if (w > 850) {
+        if (counter < -350) {
+            countertrue = true;
+        }
+        if (counter > 0) {
+            countertrue = false;
+        }
+
+        if (countertrue) {
+            counter = counter - counter;
+            counter = counter + 340;
+        } else {
+            counter = counter - 1.75;
+        }
+
+    }
+
+    firstSlide.style.marginLeft = counter + "vh";
+
+}, 150);
 
 var brandcount = -2;
 var brandup = false;
@@ -58,7 +86,7 @@ setInterval(() => {
     }
 
     if (w < 850) {
-        if (brandcount < -45) {
+        if (brandcount < -55) {
             brandup = true;
         }
         if (brandcount > 0) {
@@ -67,7 +95,7 @@ setInterval(() => {
 
         if (brandup) {
             brandcount = brandcount - brandcount;
-            brandcount = brandcount + 43
+            brandcount = brandcount + 53
 
         } else {
             brandcount = brandcount - 0.5
