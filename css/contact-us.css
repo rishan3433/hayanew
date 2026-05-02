@@ -1,0 +1,301 @@
+@font-face {
+    font-family: "NotoSans";
+    src: url(asset/font/NotoSansKR-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "audio";
+    src: url(asset/font/Audiowide-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.head {
+    background-color: rgb(231, 131, 0);
+    width: 100%;
+    height: 125px;
+}
+
+.appbar {
+    padding: 10px;
+    display: flex;
+}
+
+.HayaLogo {
+    width: 100px;
+    height: 100px;
+}
+
+.leftbar {
+    display: flex;
+}
+
+.leftbar h3 {
+    padding: 15px;
+    width: 15px;
+    font-size: 28px;
+    color: white;
+    font-family: "NotoSans";
+}
+
+.navigation {
+    width: 65%;
+    left: 35%;
+    position: absolute;
+    align-content: center;
+    height: 95px;
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    display: flex;
+    color: white;
+}
+
+.navigation ul li a {
+    margin: 15px;
+    text-decoration: none;
+    display: flex;
+    color: white;
+    font-family: "audio";
+}
+
+.navigation-btn {
+    position: absolute;
+    align-items: center;
+    height: 95px;
+    top: 2%;
+    left: 85%;
+}
+
+.clickbtn {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: none;
+}
+
+.home {
+    padding: 15px;
+    background-color: rgb(231, 131, 0);
+}
+
+.navigation ul li {
+    border-radius: 10px;
+    padding: 1px;
+    margin: 20px;
+}
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.home {
+    background-color: rgb(255, 145, 0);
+}
+
+.navigation ul li:hover {
+    background-color: rgb(255, 145, 0);
+}
+
+.closebtn {
+    display: none;
+    position: absolute;
+    left: 105px;
+}
+
+.closebtn {
+    width: 50px;
+    height: 50px;
+}
+
+.closebtn img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+
+.section {
+    width: 100vh;
+}
+
+.slider-wrapper {
+    width: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    height: 675px;
+    background-color: gray;
+    justify-content: center;
+}
+
+.body {
+    width: 100%;
+}
+
+.text-div {
+    width: 100%;
+    display: flex;
+    background-color: rgb(231, 131, 0);
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+    padding-top: 26px;
+    margin-bottom: 15px;
+}
+
+.text-div {
+    color: white;
+    font-family: "NotoSans";
+}
+
+/* Input */
+
+.form-area-main{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+.Message{
+    display: flex;
+    justify-content: center;
+}
+
+.form-area{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+.name{
+    margin: 5px;
+}
+.Email{
+    margin: 5px;
+}
+.form-area-main input{
+    padding: 15px;
+    width: 325px;
+    border-radius: 7px;
+    border: 1px solid;
+}
+
+/* Footer */
+
+.footer {
+    background-color: rgb(231, 131, 0);
+    margin-top: auto;
+    height: 15vh;
+    width: 100%;
+}
+
+.footer-line {
+    color: white;
+}
+
+.text {
+    padding-top: 1%;
+    margin-left: 5%;
+}
+
+.text p {
+    color: white;
+    font-family: monospace;
+    font-size: 17px;
+}
+
+.gmail {
+    text-decoration: none;
+    font-family: monospace;
+    color: white;
+    font-size: 17px;
+}
+
+.gmail:hover {
+    font-weight: 700;
+    font-family: monospace;
+
+}
+
+
+@media screen and (max-width: 850px) {
+    .head {
+        background-color: rgb(231, 131, 0);
+        width: 100%;
+        height: 95px;
+    }
+
+    .appbar {
+        padding: 8px;
+        display: flex;
+    }
+
+    .HayaLogo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .leftbar h3 {
+        padding: 8px;
+        width: 15px;
+        font-size: 15px;
+        color: white;
+        font-family: "NotoSans";
+    }
+
+    .navigation ul {
+        width: 21vh;
+        list-style: none;
+        display: none;
+        color: black;
+        height: 100vh;
+        background-color: rgb(199, 113, 1);
+        position: absolute;
+        left: 31.5%;
+        top: -8%;
+        transition: all 0.4s;
+    }
+
+    .space {
+        padding-top: 90px;
+    }
+
+    .clickbtn {
+        display: block;
+    }
+
+    .closebtn {
+        display: block;
+    }
+
+    .nav-ul li:hover {
+        padding: 15px;
+        background-color: rgb(231, 131, 0);
+    }
+
+    .footer {
+        display: none;
+    }
+}

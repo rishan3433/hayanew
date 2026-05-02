@@ -283,12 +283,12 @@ body {
 
 /* Footer */
 
-.footer {
-    background-color: rgb(231, 131, 0);
-    margin-top: auto;
-    height: 12vh;
-    width: 100%;
-}
+    .footer {
+        background-color: rgb(231, 131, 0);
+        margin-top: auto;
+        height: 15vh;
+        width: 100%;
+    }
 
 .footer-line {
     color: white;
