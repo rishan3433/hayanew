@@ -55,10 +55,10 @@
             </div>
         </div>
         <div class="Message">
-            <input type="text" id="message" class="message" placeholder="Message">
+            <textarea type="text" id="message" class="message" placeholder="Message"></textarea>
         </div>
-        <div class="Submit">
-            <button type="submit" class="submit">Send</button>
+        <div class="Submit" onclick="">
+            <button type="submit" class="submit" id="submit">Send</button>
         </div>
     </div>
 
@@ -74,10 +74,37 @@
         </div>
     </div>
 
-    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js" type="module"></script>
     <script src="javascript/contact-us.js"></script>
+    <script type="module">
+        document.getElementById("submit").addEventListener("click", addData)
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
+        const firebaseConfig = {
+            apiKey: "AIzaSyC7wDbZ7i-HAT5GHQB8jp2nRRn3E6xbO-w",
+            authDomain: "hayawebsite123.firebaseapp.com",
+            projectId: "hayawebsite123"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+
+        window.addData = async function () {
+            const name = document.getElementById("Name").value;
+
+            try {
+                await addDoc(collection(db, "users"), {
+                    name: name,
+                    createdAt: new Date()
+                });
+                alert("Data added!");
+            } catch (e) {
+                console.error("Error:", e);
+            }
+        };
+    </script>
 </body>
 
 </html>
