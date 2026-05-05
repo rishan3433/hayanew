@@ -457,8 +457,7 @@ body {
         background-color: rgb(231, 131, 0);
         margin-top: auto;
         height: 15vh;
-        width: 100%;
-        display: none;
+        width: 100%; 
     }
 
 
