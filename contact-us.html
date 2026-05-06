@@ -46,20 +46,24 @@
     </div>
 
     <div class="form-area-main">
-        <div class="form-area">
-            <div class="name">
-                <input type="text" id="Name" class="Name" required placeholder="Name *">
+        <form
+            action="https://script.google.com/macros/s/AKfycbycqeM-KQDlsgodBv1D-yTkhgH4g6OI8tRh68cOzU6qyO5Q5yZOZ_gjgSNQrNHZp5f6/exec"
+            method="post">
+            <div class="form-area">
+                <div class="name">
+                    <input type="text" id="Name" class="Name" name="Name" required placeholder="Name *">
+                </div>
+                <div class="Email">
+                    <input type="text" id="email" class="email" name="Email" required placeholder="Email *">
+                </div>
             </div>
-            <div class="Email">
-                <input type="text" id="email" class="email" required placeholder="Email *">
+            <div class="Message">
+                <textarea type="text" id="message" class="message" name="Message" placeholder="Message"></textarea>
             </div>
-        </div>
-        <div class="Message">
-            <textarea type="text" id="message" class="message" placeholder="Message"></textarea>
-        </div>
-        <div class="Submit" onclick="">
-            <button type="submit" class="submit" id="submit">Send</button>
-        </div>
+            <div class="Submit" onclick="">
+                <button type="submit" class="submit" id="submit">Send</button>
+            </div>
+        </form>
     </div>
 
     <div class="footer">
@@ -77,34 +81,6 @@
     <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js" type="module"></script>
     <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js" type="module"></script>
     <script src="javascript/contact-us.js"></script>
-    <script type="module">
-        document.getElementById("submit").addEventListener("click", addData)
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
-
-        const firebaseConfig = {
-            apiKey: "AIzaSyC7wDbZ7i-HAT5GHQB8jp2nRRn3E6xbO-w",
-            authDomain: "hayawebsite123.firebaseapp.com",
-            projectId: "hayawebsite123"
-        };
-
-        const app = initializeApp(firebaseConfig);
-        const db = getFirestore(app);
-
-        window.addData = async function () {
-            const name = document.getElementById("Name").value;
-
-            try {
-                await addDoc(collection(db, "users"), {
-                    name: name,
-                    createdAt: new Date()
-                });
-                alert("Data added!");
-            } catch (e) {
-                console.error("Error:", e);
-            }
-        };
-    </script>
 </body>
 
 </html>
