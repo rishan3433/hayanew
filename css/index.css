@@ -384,7 +384,7 @@ body {
     .body {
         width: 100%;
         margin-bottom: 5%;
-        height: 110vh;
+        height: 115vh;
     }
 
     .section {
@@ -407,6 +407,10 @@ body {
         align-items: center;
     }
 
+    .slider-img img{
+        margin: 5vh;
+    }
+
     .slider-nav {
         width: 100%;
         display: flex;
@@ -420,31 +424,37 @@ body {
 
     #slide-1 {
         margin-left: 200vh;
-        width: 45vh;
+        width: 40vh;
     }
 
     #slide-2 {
-        width: 35vh;
+        margin-left: 5vh;
+        width: 30vh;
     }
 
     #slide-3 {
-        width: 35vh;
+        margin-left: 5vh;
+        width: 30vh;
     }
 
     #slide-4 {
-        width: 35vh;
+        margin-left: 5vh;
+        width: 30vh;
     }
 
     #slide-5 {
-        width: 35vh;
+        margin-left: 5vh;
+        width: 30vh;
     }
 
     #slide-6 {
-        width: 35vh;
+        margin-left: 5vh;
+        width: 30vh;
     }
 
     #slide-6 img {
-        width: 43vh;
+        margin-left: 5vh;
+        width: 38vh;
     }
 
     body {
@@ -456,7 +466,7 @@ body {
     .footer {
         background-color: rgb(231, 131, 0);
         margin-top: auto;
-        height: 15vh;
+        height: 18vh;
         width: 100%; 
     }
 

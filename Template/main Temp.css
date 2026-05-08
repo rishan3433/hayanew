@@ -96,12 +96,6 @@ body {
     margin: 20px;
 }
 
-.section1 {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-}
-
 .home {
     background-color: rgb(255, 145, 0);
 }
@@ -129,106 +123,6 @@ body {
     left: 50%;
 }
 
-.section {
-    width: 100vh;
-}
-
-.slider-wrapper {
-    width: 100vh;
-    display: flex;
-    align-items: center;
-}
-
-.slider {
-    width: 100%;
-    align-items: center;
-    display: flex;
-    height: 675px;
-    background-color: gray;
-    justify-content: center;
-}
-
-.body {
-    width: 100%;
-}
-
-.text-div {
-    width: 100%;
-    display: flex;
-    background-color: rgb(231, 131, 0);
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 15px;
-    padding-top: 26px;
-    margin-bottom: 15px;
-}
-
-.text-div {
-    color: white;
-    font-family: "NotoSans";
-}
-
-/* Input */
-#message {
-    width: 693px;
-    height: 250px;
-     padding: 15px;
-    border-radius: 7px;
-    border: 1px solid;
-}
-
-.form-area-main {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.Message {
-    display: flex;
-    justify-content: center;
-}
-
-.form-area {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 35px;
-    margin-bottom: 15px;
-}
-
-.name {
-    margin: 5px;
-}
-
-.Email {
-    margin: 5px;
-}
-
-.form-area-main input {
-    padding: 15px;
-    width: 325px;
-    border-radius: 7px;
-    border: 1px solid;
-}
-
-.Submit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-}
-
-.submit1{
-    display: none;
-}
-.submit,.submit1 {
-    background-color: rgb(255, 145, 0);
-    border: 1px solid;
-    border-radius: 15px;
-    padding: 15px 30px 15px 30px;
-}
 
 /* Footer */
 
@@ -266,6 +160,7 @@ body {
     font-family: monospace;
 
 }
+
 
 
 @media screen and (max-width: 850px) {
@@ -328,12 +223,4 @@ body {
     }
 
 
-    /* Form */
-    #message {
-        width: 345px;
-    }
-
-    .form-area-main input {
-        width: 150px;
-    }
 }

@@ -33,5 +33,9 @@ form.addEventListener("submit", (e) => {
 
     fetch(ScriptUrl, { method: "POST", body: formData }).then((response) => {
         alert("Data Submitted. Our Team Will Conatct You as Soon As Possible");
+    }).catch((error) => {
+        btn1.style.display = 'none';
+        btn.style.display = 'block';
+        alert("Data Submit Failled");
     })
 })
