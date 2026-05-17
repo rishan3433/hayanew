@@ -1,3 +1,6 @@
+
+const acc = document.getElementById("Acc");
+
 function ShowSide() {
     const Side = document.querySelector(".nav-ul")
     Side.style.display = 'block'

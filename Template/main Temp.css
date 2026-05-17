@@ -8,6 +8,8 @@
     src: url(asset/font/Audiowide-Regular.ttf);
 }
 
+/* Navigation */
+
 * {
     margin: 0;
     padding: 0;
@@ -90,7 +92,7 @@ body {
     background-color: rgb(231, 131, 0);
 }
 
-.navigation ul li {
+.navigation ul li:not(.Cart) {
     border-radius: 10px;
     padding: 1px;
     margin: 20px;
@@ -123,6 +125,16 @@ body {
     left: 50%;
 }
 
+.Cart{
+    display: flex;
+    border-radius: 10px;
+    padding: 1px;
+    margin: 20px 20px 20px auto;
+    color: white;
+}
+.Cart img{
+    color: white;
+}
 
 /* Footer */
 
