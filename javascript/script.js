@@ -20,40 +20,134 @@ function CloseSide() {
 var counter = 1;
 var countertrue = false;
 
-setInterval(() => {
-    var w = window.innerWidth;
+var h = window.innerHeight;
 
-    const firstSlide = document.getElementById("slide-1");
-    if (w < 850) {
-        if (counter < -300) {
-            countertrue = true;
-        }
-        if (counter > 0) {
-            countertrue = false;
-        }
+if (h < 620) {
+    for (let i = 1; i < 7; i++) {
+        const images = document.getElementById("slide-" + i);
 
-        if (countertrue) {
-            counter = counter - counter;
-            counter = counter + 290;
-        } else {
-            counter = counter - 1;
-        }
+        images.style.marginRight = "45vh"
 
     }
+}
 
-    if (w > 850) {
-        if (counter < -350) {
-            countertrue = true;
-        }
-        if (counter > 0) {
-            countertrue = false;
+
+setInterval(() => {
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+
+    const firstSlide = document.getElementById("slide-1");
+
+    if (h > 620) {
+        if (w < 850) {
+            if (counter < -300) {
+                countertrue = true;
+            }
+            if (counter > 0) {
+                countertrue = false;
+            }
+
+            if (countertrue) {
+                counter = counter - counter;
+                counter = counter + 290;
+            } else {
+                counter = counter - 1;
+            }
+
         }
 
-        if (countertrue) {
-            counter = counter - counter;
-            counter = counter + 340;
-        } else {
-            counter = counter - 1.75;
+        if (w > 850) {
+            if (counter < -350) {
+                countertrue = true;
+            }
+            if (counter > 0) {
+                countertrue = false;
+            }
+
+            if (countertrue) {
+                counter = counter - counter;
+                counter = counter + 340;
+            } else {
+                counter = counter - 1.75;
+            }
+
+        }
+
+        if (h < 620) {
+            if (w < 850) {
+                if (counter < -300) {
+                    countertrue = true;
+                }
+                if (counter > 0) {
+                    countertrue = false;
+                }
+
+                if (countertrue) {
+                    counter = counter - counter;
+                    counter = counter + 290;
+                } else {
+                    counter = counter - 1;
+                }
+
+            }
+
+            
+        }
+
+    } else if (h < 620) {
+        if (w < 850) {
+            if (counter < -300) {
+                countertrue = true;
+            }
+            if (counter > 0) {
+                countertrue = false;
+            }
+
+            if (countertrue) {
+                counter = counter - counter;
+                counter = counter + 290;
+            } else {
+                counter = counter - 1;
+            }
+
+        }
+
+        if (w > 850) {
+            if (counter < -500) {
+                countertrue = true;
+            }
+            if (counter > 0) {
+                countertrue = false;
+            }
+
+            if (countertrue) {
+                counter = counter - counter;
+                counter = counter + 500;
+            } else {
+                counter = counter - 1.75;
+            }
+
+        }
+
+        if (h < 620) {
+            if (w < 850) {
+                if (counter < -300) {
+                    countertrue = true;
+                }
+                if (counter > 0) {
+                    countertrue = false;
+                }
+
+                if (countertrue) {
+                    counter = counter - counter;
+                    counter = counter + 290;
+                } else {
+                    counter = counter - 1;
+                }
+
+            }
+
+            
         }
 
     }
